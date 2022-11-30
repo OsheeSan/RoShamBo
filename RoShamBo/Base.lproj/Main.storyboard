@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-Lw-KiO">
-                                <rect key="frame" x="157" y="554" width="102" height="35"/>
+                                <rect key="frame" x="155" y="554" width="104" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play again"/>
                                 <connections>
@@ -100,10 +100,14 @@
                             <constraint firstItem="0CE-XP-Uow" firstAttribute="centerX" secondItem="wba-8P-ogy" secondAttribute="centerX" id="BXI-PO-qYJ"/>
                             <constraint firstItem="Az9-jK-Ook" firstAttribute="trailing" secondItem="bUu-Lw-KiO" secondAttribute="trailing" constant="155" id="Osg-s5-gNu"/>
                             <constraint firstItem="0CE-XP-Uow" firstAttribute="top" secondItem="Az9-jK-Ook" secondAttribute="top" constant="178" id="Wx9-gF-878"/>
+                            <constraint firstItem="bUu-Lw-KiO" firstAttribute="centerX" secondItem="wba-8P-ogy" secondAttribute="centerX" id="g2I-VC-jqd"/>
                             <constraint firstItem="Az9-jK-Ook" firstAttribute="bottom" secondItem="bUu-Lw-KiO" secondAttribute="bottom" constant="249" id="zlf-MB-Bnb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Fi-TF-8BT"/>
+                    <connections>
+                        <outlet property="WhoWinsLabel" destination="0CE-XP-Uow" id="33A-fX-QYZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26V-7L-ZMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
