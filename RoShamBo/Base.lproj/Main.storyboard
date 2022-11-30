@@ -79,13 +79,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CE-XP-Uow">
-                                <rect key="frame" x="170" y="226" width="74" height="35"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="285" y="400.5" width="79" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk0-4o-WJE">
+                                <rect key="frame" x="49" y="400.5" width="79" height="37"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-Lw-KiO">
-                                <rect key="frame" x="155" y="554" width="104" height="35"/>
+                                <rect key="frame" x="156.5" y="610" width="101.5" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="j7J-Cz-cg2"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play again"/>
                                 <connections>
@@ -96,17 +106,19 @@
                         <viewLayoutGuide key="safeArea" id="Az9-jK-Ook"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bUu-Lw-KiO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Az9-jK-Ook" secondAttribute="leading" id="40P-a3-OA5"/>
-                            <constraint firstItem="0CE-XP-Uow" firstAttribute="centerX" secondItem="wba-8P-ogy" secondAttribute="centerX" id="BXI-PO-qYJ"/>
-                            <constraint firstItem="Az9-jK-Ook" firstAttribute="trailing" secondItem="bUu-Lw-KiO" secondAttribute="trailing" constant="155" id="Osg-s5-gNu"/>
-                            <constraint firstItem="0CE-XP-Uow" firstAttribute="top" secondItem="Az9-jK-Ook" secondAttribute="top" constant="178" id="Wx9-gF-878"/>
-                            <constraint firstItem="bUu-Lw-KiO" firstAttribute="centerX" secondItem="wba-8P-ogy" secondAttribute="centerX" id="g2I-VC-jqd"/>
-                            <constraint firstItem="Az9-jK-Ook" firstAttribute="bottom" secondItem="bUu-Lw-KiO" secondAttribute="bottom" constant="249" id="zlf-MB-Bnb"/>
+                            <constraint firstItem="0CE-XP-Uow" firstAttribute="baseline" secondItem="Qk0-4o-WJE" secondAttribute="baseline" id="9Bn-Pc-Kaa"/>
+                            <constraint firstItem="Qk0-4o-WJE" firstAttribute="leading" secondItem="Az9-jK-Ook" secondAttribute="leading" constant="49" id="aIx-lb-jBE"/>
+                            <constraint firstItem="Az9-jK-Ook" firstAttribute="trailing" secondItem="0CE-XP-Uow" secondAttribute="trailing" constant="50" id="bc3-Ff-esO"/>
+                            <constraint firstItem="bUu-Lw-KiO" firstAttribute="centerX" secondItem="wba-8P-ogy" secondAttribute="centerX" id="dWj-5b-m43"/>
+                            <constraint firstItem="0CE-XP-Uow" firstAttribute="centerY" secondItem="wba-8P-ogy" secondAttribute="centerY" id="dvS-xD-C5H"/>
+                            <constraint firstItem="0CE-XP-Uow" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qk0-4o-WJE" secondAttribute="trailing" constant="8" symbolic="YES" id="gcD-Dt-sTV"/>
+                            <constraint firstItem="bUu-Lw-KiO" firstAttribute="top" secondItem="Az9-jK-Ook" secondAttribute="top" constant="562" id="kee-3F-jch"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Fi-TF-8BT"/>
                     <connections>
-                        <outlet property="WhoWinsLabel" destination="0CE-XP-Uow" id="33A-fX-QYZ"/>
+                        <outlet property="oponentMoveLabel" destination="0CE-XP-Uow" id="npb-0d-age"/>
+                        <outlet property="playerMoveLabel" destination="Qk0-4o-WJE" id="C3V-rb-fa1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26V-7L-ZMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,6 +132,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
