@@ -36,13 +36,16 @@ class ViewController: UIViewController {
             switch id {
             case "Rock":
                 print("Rock")
-                game.oponentMove = .rock
+                game.playerMove = .rock
+                game.oponentMove = randomMove()
             case "Paper":
                 print("Paper")
-                game.oponentMove = .paper
+                game.playerMove = .paper
+                game.oponentMove = randomMove()
             case "Scissors":
                 print("Scissors")
-                game.oponentMove = .scissors
+                game.playerMove = .scissors
+                game.oponentMove = randomMove()
             default:break
             }
         }
