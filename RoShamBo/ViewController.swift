@@ -15,5 +15,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func Paper(_ sender: UIButton) {
+        
+    }
+    
 }
 
