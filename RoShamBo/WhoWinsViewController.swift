@@ -51,7 +51,7 @@ class WhoWinsViewController: UIViewController {
             winnerIconLabel.text = "="
         case .win:
             WinnerLabel.text = "WIN!"
-            winnerIconLabel.text = "="
+            winnerIconLabel.text = ">"
         case .lose:
             WinnerLabel.text = "LOSE!"
             winnerIconLabel.text = "<"
