@@ -12,3 +12,9 @@ enum Move {
     case rock
     case scissors
 }
+
+enum IsWin {
+    case win
+    case lose
+    case draw
+}

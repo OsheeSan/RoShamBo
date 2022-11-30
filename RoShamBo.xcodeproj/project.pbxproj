@@ -62,12 +62,12 @@
 			children = (
 				844FCC882937A84C00D5169B /* AppDelegate.swift */,
 				844FCC8A2937A84C00D5169B /* SceneDelegate.swift */,
-				844FCC8C2937A84C00D5169B /* ViewController.swift */,
-				844FCC9C2937AA3A00D5169B /* WhoWinsViewController.swift */,
 				844FCC8E2937A84C00D5169B /* Main.storyboard */,
 				844FCC912937A84E00D5169B /* Assets.xcassets */,
 				844FCC932937A84E00D5169B /* LaunchScreen.storyboard */,
 				844FCC962937A84E00D5169B /* Info.plist */,
+				844FCC8C2937A84C00D5169B /* ViewController.swift */,
+				844FCC9C2937AA3A00D5169B /* WhoWinsViewController.swift */,
 				844FCC9E2937AFD600D5169B /* Enum.swift */,
 			);
 			path = RoShamBo;
